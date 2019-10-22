@@ -9,6 +9,22 @@
     tools:context=".MainActivity">
 
 
+        <TextView
+            android:gravity="center"
+            android:text="Player 1 Point is: "
+            android:textColor="@color/colorBlack"
+            android:id="@+id/playerOne"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:gravity="center"
+            android:text="Player 2 Point is: "
+            android:textColor="@color/colorBlack"
+            android:layout_margin="5pt"
+            android:id="@+id/playerTwo"
+            android:textStyle="bold"/>
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,6 +36,7 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="0pt"
+            android:onClick="btnClick"
             android:background="@color/colorWhite" />
 
         <Button
@@ -27,6 +44,7 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="3pt"
+            android:onClick="btnClick"
             android:background="@color/colorWhite" />
 
         <Button
@@ -34,6 +52,7 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="3pt"
+            android:onClick="btnClick"
             android:background="@color/colorWhite" />
     </TableRow>
 
@@ -48,12 +67,14 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="0pt"
+            android:onClick="btnClick"
             android:background="@color/colorWhite" />
 
         <Button
             android:id="@+id/Btn5"
             android:layout_width="40pt"
             android:layout_height="40pt"
+            android:onClick="btnClick"
             android:layout_marginLeft="3pt"
             android:background="@color/colorWhite" />
 
@@ -61,6 +82,7 @@
             android:id="@+id/Btn6"
             android:layout_width="40pt"
             android:layout_height="40pt"
+            android:onClick="btnClick"
             android:layout_marginLeft="3pt"
             android:background="@color/colorWhite" />
     </TableRow>
@@ -76,6 +98,7 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="0pt"
+            android:onClick="btnClick"
             android:background="@color/colorWhite" />
 
         <Button
@@ -83,6 +106,7 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="3pt"
+            android:onClick="btnClick"
             android:background="@color/colorWhite" />
 
         <Button
@@ -90,6 +114,20 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginLeft="3pt"
+            android:onClick="btnClick"
             android:background="@color/colorWhite" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10pt"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/BtnReset"
+            android:text="Reset"
+            android:onClick="reset"
+            android:background="@color/colorPrimary"/>
     </TableRow>
 </TableLayout>
